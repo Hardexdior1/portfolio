@@ -226,7 +226,7 @@ body{
     align-items: center;
     justify-content: center;
     /* background-color: #fff; */
-    max-width: 900px;
+    /* max-width: 900px; */
     padding: 20px;
     border-radius: 1rem;
     margin: 20px;
@@ -273,12 +273,18 @@ body{
     border-radius: 1.5rem;
 }
 .workingExperienceAndeducationalBackground div li{
-    text-align: left;
+    /* text-align: left; */
     margin: 0 auto;
     margin-top: 5px;
 }
 
-
+@media (min-width:767px) {
+    .workingExperienceAndeducationalBackground div li{
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+}
 /* toggle here */
 
 
@@ -339,7 +345,7 @@ body{
 
  }
  
- @media (max-width:539px) {
+ @media (max-width:767px) {
     .projectFlex img{
         height: 100px;
         width: 180px;
