@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.headerFixed{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* background-color: black; */
+  transition: 0.3s;
+  z-index: 50;
+}
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+    background-color: black;
+    border-bottom: 2px solid red;
+
+
+}
+.navBar h1{
+  color: red;
+  font-weight: bold;
+  font-size: 2.3rem;
+
+}
+.navBar ul  li{
+  list-style-type: none;
+}
+.unOrderedList{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.navBar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 17px;
+}
+.fa-bars{
+  color: white;
+  display: none;
+}
+.fa-remove{
+  color: white;
+  display: none;
+transition: 0.3s ease;
+
+}
+.fa-remove:hover{
+  transform: rotate(100deg);
+}
+@media (max-width:767px) {
+  .navBar{
+    position: relative;
+    /* background-color: antiquewhite; */
+  }
+  .unOrderedList{
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 110px;
+     /* display: none;  */
+    background-color: rgb(31, 31, 21);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.3s ease;
+    /* display: none; */
+  }
+  .ShowUnOrderedList{
+    /* position: absolute;
+    flex-direction: column;
+    left: 0;
+    right: 0; */
+    /* top: 120px; */
+    transition: 0.4s ease;
+    display: none;
+    /* align-items: center;
+    background-color: rgb(31, 31, 21);
+    padding-top: 10px;
+    padding-bottom: 10px; */
+  }
+  .navBar h1{
+    font-size: 2rem;
+  }
+  .fa-bars{
+    color: white;
+    display: initial;
+    transition: 0.3s ease;
+  }
+}
