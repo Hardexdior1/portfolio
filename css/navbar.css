@@ -74,6 +74,7 @@ transition: 0.3s ease;
     padding-top: 10px;
     padding-bottom: 10px;
     transition: 0.3s ease;
+    z-index: 1;
     /* display: none; */
   }
   .navBar ul li a{
