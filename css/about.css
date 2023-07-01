@@ -11,6 +11,7 @@ body{
 
 .top1{
     background-color: rgb(5, 4, 4);
+   
 }
 .textAndImg{
     display: flex;
@@ -44,7 +45,7 @@ body{
     color: #fff;
 }
 .textAndImg div span{
-    color: rgb(231, 21, 21);
+    color: rgb(10, 187, 10);
 
 }
 .textAndImg div p{
@@ -88,12 +89,14 @@ body{
     background-image: linear-gradient(rgb(6, 11, 19),rgb(16, 16, 22));
    }
    .introduction h2{
-    color: red;
+    color: rgb(10, 187, 10);
     font-weight: bold;
     font-family: sans-serif;
    }
    .introduction h1{
-    color: red;
+    color: rgb(10, 187, 10);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(10, 187, 10);
    }
    .introductionFlex{
     display: flex;
@@ -168,15 +171,15 @@ body{
     transform: scale(1.2);
 }
 .line{
-    height: 10px;
+    height: 15px;
     margin: 0 auto;
     margin-bottom: 10px;
-    width: 100px;
+    width: 200px;
     background-color: rgb(255, 0, 0);
     /* animation-name:animation ;
     animation-duration: 3s;
     animation-delay: 3s ; */
-    background: linear-gradient(to right, #1abc9c, #2ecc71, #3498db, #9b59b6, #34495e, #f1c40f, #e67e22, #e74c3c);
+    background: linear-gradient(to right, rgb(10, 187, 10), #2ecc71, #3498db, rgb(10, 187, 10), #34495e, #f1c40f, #e67e22, #e74c3c);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -205,7 +208,7 @@ body{
     }
 }
 .choosewrapDiv h2{
-    color: rgb(216, 34, 34);
+    color: rgb(10, 187, 10);
 }
 .choosewrapDiv{
     background-color: rgb(0, 0, 0);
@@ -291,7 +294,7 @@ body{
  /* footer */
  footer{
     padding: 20px 40px;
-    background-color: rgb(214, 192, 192);
+    background-color: white;
  }
  footer i{
     font-size: 40px;
@@ -301,57 +304,56 @@ body{
     font-weight: bold;
  }
 
- /* projects */
-
- .projectFlex img{
-    width:70%;
-    height: 300px;
-    transition: 0.3s;
-    border-radius: 10px;
-    object-fit: cover;
-    
-    
- }
- .projects{
-    padding-top: 30px;
- }
- .projects h1{
-    color: #e73a1c;
- }
- .projectFlex div{
-    position: relative;
- }
- .projectFlex img:hover{
-    cursor: pointer;
-    border-radius: 1.3rem;
-    opacity: 0.5;
- }
  .projectFlex{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px 30px;
-    align-items: center;
+    grid-template-columns: 1fr 1fr ;
+    align-items:top;
     gap: 20px;
- }
- .projectFlex p{
-    position: absolute;
-    top: 120px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 20px;
-    color: rgb(100, 228, 15);
-    font-weight: bold;
+    background-color: rgb(0, 0, 0);
 
  }
- 
- @media (max-width:767px) {
-    .projectFlex img{
-        height: 100px;
-        width: 180px;
-    }
+ @media (max-width:540px) {
     .projectFlex{
-        gap: 5px;
-        padding: 15px 10px;
+        display: flex;
+        flex-wrap: wrap;
     }
+ }
+ .projectFlex img{
+    width: 100%;
+    border: 1px solid rgb(11, 12, 11);
+    border-top-left-radius: 15px;
+ }
+ .projectFlex p{
+    padding: 10px;
+ }
+ .description{
+    padding: 5px;
+    background-color: white;
+    margin-top: -10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: fit-content;
+
+ }
+ .description h3{
+    color: rgb(10, 187, 10) ;
+ }
+ .projectFlex div{
+    /* background-color: white; */
+ }
+ @media (min-width:540px) {
+    #paraMobile{
+        display: none;
+    }
+ }
+ @media (max-width:539px) {
+    #paraDesktop{
+        display: none;
+    }
+ }
+ .direction{
+    color: rgb(10, 187, 10) ;
+margin: 0 auto;
+text-align:  center;
+margin-bottom: 10px;
  }
