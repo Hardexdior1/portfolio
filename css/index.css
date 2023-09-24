@@ -8,7 +8,9 @@
                             /* NAVBAR STYLING ENDS HERE */
 
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 
@@ -21,7 +23,7 @@ marquee{
     padding: 20px 40px;
     /* background-color: rgb(47, 47, 65); */
     color: rgb(245, 245, 231);
-    box-shadow: 3px 4px 5px 2px rgba(177, 154, 154, 0.959);
+    box-shadow: 3px 4px 5px 2px rgba(58, 33, 33, 0.959);
     font-style: italic;
     font-size: 19px;
     font-weight: bold;
